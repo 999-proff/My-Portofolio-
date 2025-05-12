@@ -349,3 +349,41 @@ body {
     opacity: 1;
   }
 }
+body {
+  background-color: #121212;  /* Warna latar belakang gelap */
+  color: #e0e0e0;  /* Warna teks terang untuk kontras */
+}
+
+.container {
+  background: linear-gradient(to bottom right, #1c1c1c, #2a2a2a);  /* Gradasi gelap */
+  padding: 40px 20px;
+  border-radius: 10px;
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #bbbbbb, #888888);  /* Gradasi abu-abu */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.custom-card {
+  background-color: #2c2c2c;  /* Card dengan warna latar belakang gelap */
+  color: #e0e0e0;  /* Teks card yang terang */
+  border-radius: 10px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.custom-card:hover {
+  background-color: #3a3a3a;  /* Card berubah warna saat di-hover */
+  transform: translateY(-5px);  /* Efek hover: sedikit terangkat */
+}
+
+.btn-outline-dark {
+  border-color: #555555;  /* Tombol dengan border gelap */
+  color: #e0e0e0;  /* Warna tombol terang */
+}
+
+.btn-outline-dark:hover {
+  background-color: #444444;  /* Warna tombol saat hover */
+  color: #ffffff;  /* Warna teks tombol saat hover */
+    }
