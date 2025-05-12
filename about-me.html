@@ -67,6 +67,25 @@
       margin: 40px auto;
       border: none;
     }
+
+    /* Styling untuk button language */
+    .language-button {
+      border: 2px solid #888;
+      background-color: #2c2f33;
+      color: #fff;
+      transition: all 0.3s ease;
+      padding: 10px 20px;
+      font-size: 14px;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 20px;
+    }
+
+    .language-button:hover {
+      background-color: #ffc107;
+      border-color: #ffc107;
+      color: #000;
+    }
   </style>
 </head>
 <body class="bg-dark text-light">
@@ -81,7 +100,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link active" aria-current="page" href="about-me.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="about-me.html" id="about-me-title">About</a></li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Other</a>
             <ul class="dropdown-menu">
@@ -100,86 +119,122 @@
     </div>
   </nav>
 
-<!-- About Me section start -->
-<div class="container-fluid bg-dark text-light py-5 about-me-section" style="background-color: #2c2f33;">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-lg-6 mb-4 mb-lg-0">
-        <h1 class="display-5 fw-bold mb-3 about-me-title">About Me</h1>
-        <p>Hi! My name is Aldi. I'm currently learning how to build websites and I want to become a great web developer. I’m focusing on HTML, CSS, and Bootstrap to create clean and responsive designs.</p>
-        <p>I also enjoy learning from online communities such as YouTube, forums, and learning groups. They help me grow and stay motivated.</p>
-        <p>In the future, I want to build websites that are useful and easy to use for everyone.</p>
+  <!-- About Me section start -->
+  <div class="container-fluid bg-dark text-light py-5 about-me-section" style="background-color: #2c2f33;">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <h1 class="display-5 fw-bold mb-3" id="about-me-text">About Me</h1>
+          <p id="about-me-text-2">Hi! My name is Aldi. I'm currently learning how to build websites and I want to become a great web developer. I’m focusing on HTML, CSS, and Bootstrap to create clean and responsive designs.</p>
+          <p id="about-me-text-3">I also enjoy learning from online communities such as YouTube, forums, and learning groups. They help me grow and stay motivated.</p>
+          <p id="about-me-text-4">In the future, I want to build websites that are useful and easy to use for everyone.</p>
+        </div>
+        <div class="col-lg-6 text-center">
+          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=500&q=80" 
+               alt="Aldi's Photo" 
+               class="img-fluid rounded shadow" 
+               style="max-height: 350px; object-fit: cover;">
+        </div>
       </div>
-      <div class="col-lg-6 text-center">
-        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=500&q=80" 
-             alt="Aldi's Photo" 
-             class="img-fluid rounded shadow" 
-             style="max-height: 350px; object-fit: cover;">
+
+      <!-- Button to toggle language -->
+      <div class="text-center">
+        <button class="btn language-button" id="language-toggle" onclick="toggleLanguage()">Switch Language</button>
       </div>
     </div>
   </div>
-</div>
-<!-- About Me section end -->
+  <!-- About Me section end -->
 
-<style>
-  .about-me-title {
-    border-bottom: 3px solid #ffffff; /* Garis bawah dengan warna putih */
-    width: 50%; /* Lebar garis 50% dari lebar elemen */
-    margin-left: 0; /* Garis dimulai dari kiri */
-    padding-bottom: 10px; /* Memberi jarak antara teks dan garis */
-  }
-</style>
+  <style>
+    .about-me-title {
+      border-bottom: 3px solid #ffffff;
+      width: 50%;
+      margin-left: 0;
+      padding-bottom: 10px;
+    }
+  </style>
 
   <!-- Separator -->
   <hr class="footer-line">
 
-<!-- Skills -->
-<section class="container-fluid" style="background-color: #1e1e1e; padding: 4rem 0;">
-  <div class="container text-center">
-    <h2 class="fw-bold mb-3">My Skills Coding</h2>
-    <div class="row justify-content-center g-4">
-      <div class="col-md-3 col-6">
-        <div class="p-4 rounded shadow-sm skill-box h-100">
-          <h5 class="fw-semibold mb-0">HTML</h5>
+  <!-- Skills -->
+  <section class="container-fluid" style="background-color: #1e1e1e; padding: 4rem 0;">
+    <div class="container text-center">
+      <h2 class="fw-bold mb-3">My Skills Coding</h2>
+      <div class="row justify-content-center g-4">
+        <div class="col-md-3 col-6">
+          <div class="p-4 rounded shadow-sm skill-box h-100">
+            <h5 class="fw-semibold mb-0">HTML</h5>
+          </div>
         </div>
-      </div>
-      <div class="col-md-3 col-6">
-        <div class="p-4 rounded shadow-sm skill-box h-100">
-          <h5 class="fw-semibold mb-0">CSS (Learning)</h5>
+        <div class="col-md-3 col-6">
+          <div class="p-4 rounded shadow-sm skill-box h-100">
+            <h5 class="fw-semibold mb-0">CSS (Learning)</h5>
+          </div>
         </div>
-      </div>
-      <div class="col-md-3 col-6">
-        <div class="p-4 rounded shadow-sm skill-box h-100">
-          <h5 class="fw-semibold mb-0">Bootstrap</h5>
+        <div class="col-md-3 col-6">
+          <div class="p-4 rounded shadow-sm skill-box h-100">
+            <h5 class="fw-semibold mb-0">Bootstrap</h5>
+          </div>
         </div>
-      </div>
-      <div class="col-md-3 col-6">
-        <div class="p-4 rounded shadow-sm skill-box h-100">
-          <h5 class="fw-semibold mb-0">JavaScript (Learning)</h5>
+        <div class="col-md-3 col-6">
+          <div class="p-4 rounded shadow-sm skill-box h-100">
+            <h5 class="fw-semibold mb-0">JavaScript (Learning)</h5>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- Footer -->
-<footer style="background-color: #181818; padding: 4rem 0;">
-  <div class="container text-center">
-    <h4 class="mb-3 text-warning">Thank You for Visiting!</h4>
-    <p class="text-light-50">Feel free to connect with me on my social platforms below.</p>
-    <div class="row justify-content-center mb-4">
-      <div class="col-4 col-md-2">
-        <a href="https://x.com/Aldi999Fr?t=CIVeg9pAe3OiiCjcFPJKOw&s=09" target="_blank" class="btn btn-outline-light btn-sm w-100">Twitter</a>
+  <!-- Footer -->
+  <footer style="background-color: #181818; padding: 4rem 0;">
+    <div class="container text-center">
+      <h4 class="mb-3 text-warning">Thank You for Visiting!</h4>
+      <p class="text-light-50">Feel free to connect with me on my social platforms below.</p>
+      <div class="row justify-content-center mb-4">
+        <div class="col-4 col-md-2">
+          <a href="https://x.com/Aldi999Fr?t=CIVeg9pAe3OiiCjcFPJKOw&s=09" target="_blank" class="btn btn-outline-light btn-sm w-100">Twitter</a>
+        </div>
+        <div class="col-4 col-md-2">
+          <a href="https://github.com/999-proff/Ging?tab=readme-ov-file#hi-im-proffies" target="_blank" class="btn btn-outline-light btn-sm w-100">GitHub</a>
+        </div>
+        <div class="col-4 col-md-2">
+          <a href="https://www.instagram.com/pr0ffies_morgue999?igsh=N3FxOGZreHFkNWdu" target="_blank" class="btn btn-outline-light btn-sm w-100">Instagram</a>
+        </div>
       </div>
-      <div class="col-4 col-md-2">
-        <a href="https://github.com/999-proff/Ging?tab=readme-ov-file#hi-im-proffies" target="_blank" class="btn btn-outline-light btn-sm w-100">GitHub</a>
-      </div>
-      <div class="col-4 col-md-2">
-        <a href="https://www.instagram.com/pr0ffies_morgue999?igsh=N3FxOGZreHFkNWdu" target="_blank" class="btn btn-outline-light btn-sm w-100">Instagram</a>
-      </div>
+      <p class="text-secondary small mt-3">&copy; 2025 Aldi | Built with HTML, CSS & Bootstrap</p>
     </div>
-    <p class="text-secondary small mt-3">&copy; 2025 Aldi | Built with HTML, CSS & Bootstrap</p>
-  </div>
-</footer>
+  </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <script>
+    let isEnglish = true;
+
+    function toggleLanguage() {
+      var langButton = document.getElementById("language-toggle");
+      var aboutText = document.getElementById("about-me-text");
+      var aboutText2 = document.getElementById("about-me-text-2");
+      var aboutText3 = document.getElementById("about-me-text-3");
+      var aboutText4 = document.getElementById("about-me-text-4");
+
+      if (isEnglish) {
+        langButton.innerText = "Switch to English";
+        aboutText.innerText = "Tentang Saya";
+        aboutText2.innerText = "Hai! Nama saya Aldi. Saat ini saya sedang belajar cara membangun situs web dan ingin menjadi pengembang web yang hebat. Fokus saya adalah HTML, CSS, dan Bootstrap untuk membuat desain yang bersih dan responsif.";
+        aboutText3.innerText = "Saya juga suka belajar dari komunitas online seperti YouTube, forum, dan kelompok belajar. Mereka membantu saya tumbuh dan tetap termotivasi.";
+        aboutText4.innerText = "Di masa depan, saya ingin membangun situs web yang berguna dan mudah digunakan untuk semua orang.";
+        isEnglish = false;
+      } else {
+        langButton.innerText = "Switch to Indonesian";
+        aboutText.innerText = "About Me";
+        aboutText2.innerText = "Hi! My name is Aldi. I'm currently learning how to build websites and I want to become a great web developer. I’m focusing on HTML, CSS, and Bootstrap to create clean and responsive designs.";
+        aboutText3.innerText = "I also enjoy learning from online communities such as YouTube, forums, and learning groups. They help me grow and stay motivated.";
+        aboutText4.innerText = "In the future, I want to build websites that are useful and easy to use for everyone.";
+        isEnglish = true;
+      }
+    }
+  </script>
+
+</body>
+  </html>
