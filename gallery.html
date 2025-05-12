@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+     rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous">
+    <title>Aldi - Gallery PAGE</title>
+<style>
+  /* Menghilangkan margin dan padding pada elemen-elemen utama */
+  .container, .row, .col, .section, .content {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Membuat setiap elemen mengisi ruang tanpa jarak */
+  .container-fluid, .row {
+    margin-bottom: 0;
+  }
+
+  /* Pastikan ada jarak sedikit di antara elemen-elemen */
+  .section {
+    margin-bottom: 20px; /* Atur jarak antar section sesuai kebutuhan */
+  }
+
+  /* Mengatur margin untuk elemen deskripsi utama dan cerita kedua */
+  .main-description {
+    margin-bottom: 10px; /* Mengurangi jarak antar deskripsi */
+  }
+
+  .story-description {
+    margin-top: 10px; /* Mengurangi jarak antar cerita */
+  }
+</style>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-light sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">MyPorto</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about-me.html">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Other</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="contact-me.html">Contact</a></li>
+                  <li><a class="dropdown-item" href="gallery.html">Gallery</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="sosmed.html">Sosmed</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-light" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+<!-- Awalan -->
+<section class="py-5" style="background-color: #222; color: #f8f9fa;">
+  <div class="container text-center">
+    <!-- Versi Indonesia -->
+    <div class="gallery-open-id">
+      <h2 class="mb-3">Selamat Datang</h2>
+      <p class="lead">Hai kamu, di sini kamu bisa berkelana, melihat, dan menjelajahi perjalanan ku.</p>
+    </div>
+
+    <!-- Versi Inggris -->
+    <div class="gallery-open-en" style="display: none;">
+      <h2 class="mb-3">Welcome</h2>
+      <p class="lead">Hi there, here you can wander, view, and explore my journey.</p>
+    </div>
+
+    <!-- Tombol Ganti Bahasa -->
+    <button class="btn btn-outline-warning mt-4" onclick="toggleGalleryLang()">Ganti Bahasa / Switch Language</button>
+  </div>
+</section>
+
+<script>
+  function toggleGalleryLang() {
+    const idText = document.querySelector('.gallery-open-id');
+    const enText = document.querySelector('.gallery-open-en');
+
+    if (idText.style.display === 'none') {
+      idText.style.display = 'block';
+      enText.style.display = 'none';
+    } else {
+      idText.style.display = 'none';
+      enText.style.display = 'block';
+    }
+  }
+</script>
+<!-- Cerita Ku -->
+<section class="py-5" style="background-color: #222;">
+  <!-- Judul Section -->
+  <div class="container text-light">
+    <h2 class="section-title mb-4" style="border-left: 4px solid #ffc107; padding-left: 12px;">
+      <span class="title-id">Kisah Perjalanan Hidupku</span>
+      <span class="title-en" style="display: none;">My Life Journey</span>
+    </h2>
+
+    <!-- Deskripsi -->
+    <div class="story-description ps-3">
+      <!-- TK -->
+      <div class="desc-id">
+        <h4 class="fw-bold text-warning">Masa TK</h4>
+        <p>Perjalananku dimulai saat masuk TK yang letaknya tidak jauh dari rumah. Aku biasa pergi berjalan kaki, terkadang ditemani orang tua atau teman. Dari situ aku mulai mengenal dunia luar.</p>
+      </div>
+      <div class="desc-en" style="display: none;">
+        <h4 class="fw-bold text-warning">Kindergarten</h4>
+        <p>My journey started when I entered kindergarten near my house. I usually walked there, sometimes with my parents or friends. That’s where I began to explore the world around me.</p>
+      </div>
+
+      <!-- SD -->
+      <div class="desc-id mt-4">
+        <h4 class="fw-bold text-warning">Masa SD</h4>
+        <p>Setelah lulus TK, aku melanjutkan ke SD yang juga dekat dari rumah. Di sana aku mulai bersosialisasi, belajar, dan terkadang bersepeda ke sekolah. Namun, aku juga mulai merasakan suka duka belajar karena dulu aku cukup malas.</p>
+      </div>
+      <div class="desc-en mt-4" style="display: none;">
+        <h4 class="fw-bold text-warning">Elementary School</h4>
+        <p>After kindergarten, I continued to elementary school which was also close to home. There I began to socialize, study, and sometimes ride a bike to school. But I also started to feel the ups and downs of learning because I used to be quite lazy.</p>
+      </div>
+
+      <!-- SMP -->
+      <div class="desc-id mt-4">
+        <h4 class="fw-bold text-warning">Masa SMP</h4>
+        <p>Di SMP, aku menghadapi lingkungan yang benar-benar baru. Teman-teman dan guru-guru yang pengertian membuatku cepat beradaptasi. Aku mulai aktif di kegiatan ekstrakurikuler dan bahkan pernah menjuarai salah satunya. Kini aku berada di kelas 8, dan perjalanan masih terus berlanjut.</p>
+      </div>
+      <div class="desc-en mt-4" style="display: none;">
+        <h4 class="fw-bold text-warning">Junior High School</h4>
+        <p>In junior high, I entered a whole new environment. Kind teachers and supportive friends helped me adapt quickly. I got involved in extracurricular activities and even won in one. Now I'm in the 8th grade, and the journey continues.</p>
+      </div>
+    </div>
+
+    <!-- Tombol switch bahasa -->
+    <div class="text-end mt-3">
+      <button class="btn btn-outline-warning" onclick="toggleStoryLanguage()">Switch Language</button>
+    </div>
+  </div>
+</section>
+
+<!-- Script Bahasa -->
+<script>
+  function toggleStoryLanguage() {
+    const idTexts = document.querySelectorAll('.desc-id');
+    const enTexts = document.querySelectorAll('.desc-en');
+    const idTitle = document.querySelector('.title-id');
+    const enTitle = document.querySelector('.title-en');
+
+    const isID = idTexts[0].style.display !== 'none';
+
+    idTexts.forEach(el => el.style.display = isID ? 'none' : 'block');
+    enTexts.forEach(el => el.style.display = isID ? 'block' : 'none');
+    idTitle.style.display = isID ? 'none' : 'inline';
+    enTitle.style.display = isID ? 'inline' : 'none';
+  }
+</script>
+      <!-- Quotes -->
+<div class="quote-slider">
+    <!-- Title for Quotes -->
+    <h2 class="quote-title">Quotes</h2>
+
+    <!-- Teks untuk Bahasa Indonesia -->
+    <p class="quote" id="quote-id"></p>
+    <p class="author" id="author-id"></p>
+
+    <!-- Teks untuk Bahasa Inggris -->
+    <p class="quote" id="quote-en" style="display: none;"></p>
+    <p class="author" id="author-en" style="display: none;"></p>
+
+    <!-- Tombol switch bahasa -->
+    <div class="btn-container">
+        <button class="btn btn-outline-warning" onclick="toggleLanguage()">Switch Language</button>
+    </div>
+
+    <!-- Tombol Navigasi untuk Slider -->
+    <div class="navigation-buttons">
+        <button class="btn btn-nav" onclick="prevQuote()">&#9664; Prev</button>
+        <button class="btn btn-nav" onclick="nextQuote()">Next &#9654;</button>
+    </div>
+
+    <!-- SOF (Sumber Inspirasi) dan Ideas -->
+    <div class="sofinspiration">
+        <h3>Sumber Inspirasi:</h3>
+        <p class="sofinsp-text">Inspirasi bisa datang dari berbagai pengalaman hidup, dari kegagalan, kemenangan, hingga perjalanan pribadi yang mengajarkan kita lebih banyak tentang diri kita sendiri.</p>
+        
+        <h3>Ide-ide Motivasi:</h3>
+        <p class="sofinsp-text">Motivasi dapat ditemukan dalam setiap tantangan yang kita hadapi. Setiap langkah kecil menuju tujuan besar akan memberikan kita semangat untuk terus maju.</p>
+    </div>
+</div>
+
+<script>
+    const quotes = [
+        {
+            textId: "Hidup bukanlah tentang menunggu badai berlalu, tapi tentang belajar menari di tengah hujan.",
+            authorId: "Vivian Greene",
+            textEn: "Life isn't about waiting for the storm to pass, but about learning to dance in the rain.",
+            authorEn: "Vivian Greene"
+        },
+        {
+            textId: "Jangan berhenti ketika kamu lelah. Berhentilah ketika kamu selesai.",
+            authorId: "Unknown",
+            textEn: "Don't stop when you're tired. Stop when you're done.",
+            authorEn: "Unknown"
+        },
+        {
+            textId: "Kesuksesan bukan kunci kebahagiaan. Kebahagiaanlah kunci kesuksesan.",
+            authorId: "Albert Schweitzer",
+            textEn: "Success is not the key to happiness. Happiness is the key to success.",
+            authorEn: "Albert Schweitzer"
+        },
+        {
+            textId: "Hal terbesar dalam hidup adalah belajar bagaimana mencintai dan menerima diri sendiri.",
+            authorId: "Maxime Lagace",
+            textEn: "The greatest thing in life is learning how to love and accept yourself.",
+            authorEn: "Maxime Lagace"
+        },
+        {
+            textId: "Jika kamu bisa memimpikannya, kamu bisa mewujudkannya.",
+            authorId: "Walt Disney",
+            textEn: "If you can dream it, you can do it.",
+            authorEn: "Walt Disney"
+        },
+        {
+            textId: "Hidup itu 10% tentang apa yang terjadi padamu, dan 90% tentang bagaimana kamu meresponsnya.",
+            authorId: "Charles R. Swindoll",
+            textEn: "Life is 10% what happens to you and 90% how you react to it.",
+            authorEn: "Charles R. Swindoll"
+        },
+        {
+            textId: "Jangan takut gagal, takutlah jika tidak pernah mencoba.",
+            authorId: "Unknown",
+            textEn: "Don't be afraid to fail, be afraid of not trying.",
+            authorEn: "Unknown"
+        },
+        {
+            textId: "Jika kamu tidak bisa terbang, lari. Jika kamu tidak bisa lari, berjalan. Jika kamu tidak bisa berjalan, merangkak. Tapi apapun yang kamu lakukan, kamu harus terus maju.",
+            authorId: "Martin Luther King Jr.",
+            textEn: "If you can't fly, run. If you can't run, walk. If you can't walk, crawl. But whatever you do, you have to keep moving forward.",
+            authorEn: "Martin Luther King Jr."
+        },
+        {
+            textId: "Percayalah pada dirimu sendiri, dan segala sesuatu akan mengikuti.",
+            authorId: "Unknown",
+            textEn: "Believe in yourself, and everything will follow.",
+            authorEn: "Unknown"
+        },
+        {
+            textId: "Kehidupan tidak akan selalu mudah, tetapi selalu ada cara untuk menghadapinya.",
+            authorId: "Unknown",
+            textEn: "Life won't always be easy, but there’s always a way to face it.",
+            authorEn: "Unknown"
+        }
+    ];
+
+    let currentQuoteIndex = 0;
+
+    function displayQuote(index) {
+        const quote = quotes[index];
+        document.getElementById("quote-id").textContent = `"${quote.textId}"`;
+        document.getElementById("author-id").textContent = `- ${quote.authorId}`;
+
+        document.getElementById("quote-en").textContent = `"${quote.textEn}"`;
+        document.getElementById("author-en").textContent = `- ${quote.authorEn}`;
+    }
+
+    // Tampilkan quote pertama
+    displayQuote(currentQuoteIndex);
+
+    // Fungsi untuk pindah ke quote berikutnya
+    function nextQuote() {
+        currentQuoteIndex = (currentQuoteIndex + 1) % quotes.length;
+        displayQuote(currentQuoteIndex);
+    }
+
+    // Fungsi untuk pindah ke quote sebelumnya
+    function prevQuote() {
+        currentQuoteIndex = (currentQuoteIndex - 1 + quotes.length) % quotes.length;
+        displayQuote(currentQuoteIndex);
+    }
+
+    function toggleLanguage() {
+        const idText = document.getElementById("quote-id");
+        const enText = document.getElementById("quote-en");
+        const idAuthor = document.getElementById("author-id");
+        const enAuthor = document.getElementById("author-en");
+
+        const isID = idText.style.display !== 'none';
+
+        idText.style.display = isID ? 'none' : 'block';
+        enText.style.display = isID ? 'block' : 'none';
+        idAuthor.style.display = isID ? 'none' : 'block';
+        enAuthor.style.display = isID ? 'block' : 'none';
+    }
+</script>
+
+<style>
+    body {
+        background-color: #222;
+        color: #e0e0e0;
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+    }
+
+    .quote-slider {
+        background-color: #333;
+        padding: 30px 20px;
+        border-radius: 15px; /* Soft corners */
+        margin-top: 20px;
+        text-align: center;
+        color: #e0e0e0;
+        width: 80%;
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5); /* Soft shadow */
+    }
+
+    .quote-title {
+        font-size: 2.2em;
+        margin-bottom: 15px;
+        color: #ffc107;
+        border-bottom: 4px solid #ffc107;
+        display: inline-block;
+        padding-bottom: 10px;
+    }
+
+    .quote {
+        font-size: 1.6em;
+        font-style: italic;
+        margin-bottom: 10px;
+    }
+
+    .author {
+        font-size: 1.3em;
+        margin-top: 10px;
+        font-weight: bold;
+    }
+
+    .btn-container {
+        margin-top: 15px;
+    }
+
+    .navigation-buttons {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .navigation-buttons button {
+        margin: 0 15px;
+        padding: 12px 20px;
+        font-size: 1.2em;
+        border-radius: 25px; /* Soft buttons */
+        transition: background-color 0.3s, transform 0.3s;
+        background-color: #444;
+        color: white;
+        border: none;
+    }
+
+    .navigation-buttons button:hover {
+        background-color: #e0e0e0;
+        color: #333;
+        transform: scale(1.1);
+    }
+
+    .sofinspiration {
+        margin-top: 30px;
+        font-size: 1em;
+        color: #e0e0e0;
+        padding: 15px;
+        background-color: #444;
+        border-radius: 10px;
+    }
+
+    .sofinsp-text {
+        font-style: italic;
+        line-height: 1.5;
+        margin-bottom: 10px;
+    }
+
+    .sofinspiration h3 {
+        font-size: 1.3em;
+        color: #ffc107;
+        margin-bottom: 10px;
+    }
+
+    .btn-outline-warning {
+        margin-top: 10px;
+    }
+</style>
+      <!-- END QUOTES -->
+      
+      <!-- Penutup Gallery -->
+<section class="py-5" style="background-color: #1c1c1c; color: #eee; border-radius: 30px; margin-top: 50px;">
+  <div class="container text-center">
+    <h3 class="mb-3">Terima Kasih Sudah Melihat</h3>
+    <p class="mb-4">Perjalananku masih panjang, tapi kamu sudah jadi bagian dari ceritanya. Sampai jumpa di bab berikutnya!</p>
+    <hr style="width: 60%; margin: auto; border-top: 1px solid #ffc107;">
+    <small class="d-block mt-3 text-muted">© 2025 Proff's Gallery</small>
+
+    <!-- Tombol Ganti Bahasa -->
+    <div class="text-center mt-3">
+      <button class="btn btn-outline-warning" onclick="toggleFooterLanguage()">Switch Language</button>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Script Bahasa untuk Penutup -->
+<script>
+  function toggleFooterLanguage() {
+    const idFooterText = "Terima Kasih Sudah Melihat";
+    const enFooterText = "Thank you for viewing";
+
+    const idFooter = document.querySelector('.penutup-id');
+    const enFooter = document.querySelector('.penutup-en');
+
+    if (idFooter.style.display === 'none') {
+      idFooter.style.display = 'block';
+      enFooter.style.display = 'none';
+    } else {
+      idFooter.style.display = 'none';
+      enFooter.style.display = 'block';
+    }
+  }
+</script>
+<!-- Script Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

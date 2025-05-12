@@ -1,0 +1,351 @@
+/* Custom horizontal line */
+.custom-hr {
+  border: none;
+  height: 2px; /* Lebar garis */
+  background: linear-gradient(to right, #ffffff, #888888, #ffffff); /* Gradasi warna */
+  margin: 30px auto; /* Spasi antara garis dan konten */
+  width: 80px; /* Lebar garis */
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.custom-hr:hover {
+  width: 120px; /* Lebar garis bertambah saat hover */
+  background: linear-gradient(to right, #ff7e5f, #feb47b, #ff7e5f); /* Warna berubah saat hover */
+}
+
+/* Optional: Styling halaman */
+body {
+  background-color: #121212; /* Background halaman gelap */
+  color: #ddd; /* Teks terang */
+}
+
+h2 {
+  color: #fff; /* Judul putih */
+}
+.about-me-section {
+  background-color: #2c2f33; /* Ganti dengan warna yang kamu inginkan */
+  color: #ddd;
+  padding: 4rem 0;
+}
+body {
+    background-color: #121212;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 40px;
+    margin-top: 50px;
+    border-radius: 30px; /* Membuat sudut lebih membulat */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Efek bayangan untuk memberi kedalaman */
+    max-width: 1200px; /* Membatasi lebar footer */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer p {
+    font-size: 1rem;
+    margin: 10px 0;
+    text-align: center; /* Menyusun teks di tengah */
+}
+
+.social-footer {
+    margin: 20px 0;
+    text-align: center; /* Menyusun ikon sosial media di tengah */
+}
+
+.social-footer .social-icon {
+    font-size: 2rem;
+    color: #fff;
+    margin: 0 15px;
+    transition: color 0.3s ease, transform 0.3s ease; /* Tambahkan efek transform */
+}
+
+.social-footer .social-icon:hover {
+    color: #00aced; /* Mengubah warna saat hover */
+    transform: scale(1.2); /* Menambahkan efek zoom saat hover */
+}
+
+footer {
+    margin-top: 30px;
+}
+/* styles.css */
+.soft-divider {
+    border: 0
+    height: 50px; /* Meningkatkan ketebalan garis */
+    background: rgba(255, 255, 255, 0.7); /* Warna putih soft dengan sedikit transparansi */
+    margin: 20px 0;
+}
+
+
+
+<style>
+  .faq-container {
+    background-color: #333;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .section-title {
+    font-size: 1.8em;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  .faq-question {
+    color: #fff;
+    font-size: 1.1em;
+    background-color: #444;
+    border: none;
+    padding: 15px;
+    text-align: left;
+    border-radius: 5px;
+  }
+
+  .faq-question:hover {
+    background-color: #555;
+  }
+
+  .faq-answer p {
+    color: #bbb;
+    padding: 15px;
+    background-color: #444;
+    border-radius: 5px;
+  }
+</style>
+
+.spotify-box {
+  max-width: 360px;
+  background-color: #2b2b3b;
+  border-radius: 14px;
+  padding: 12px;
+  margin: 0 auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.spotify-embed {
+  width: 100%;
+  height: 232px;
+  border: none;
+  border-radius: 10px;
+  display: block;
+}
+
+/* Membuat header Spotify lebih menarik */
+.spotify-header {
+  font-size: 2.5rem; /* Ukuran header lebih besar untuk fokus */
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #fff;
+  text-align: center;
+}
+
+/* Divider yang lebih lembut */
+.soft-divider {
+  border-top: 2px solid #444;
+  width: 50px;
+  margin: 20px auto;
+}
+
+/* Styling for small screens */
+@media (max-width: 900px) {
+  .spotify-embed {
+    height: 250px;
+  }
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  color: white;
+  background-color: #212121; /* Soft dark background */
+  overflow-x: hidden;
+}
+
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  object-fit: cover;
+  filter: brightness(0.4);
+}
+
+.navbar {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.section-header {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #f1f1f1;
+}
+
+.social-media-btns a {
+  background-color: #333;
+  border-radius: 50%;
+  padding: 15px;
+  font-size: 1.8rem;
+  color: white;
+  transition: all 0.3s ease;
+  display: inline-block;
+  text-align: center;
+  width: 60px;
+  height: 60px;
+  line-height: 30px;
+}
+
+
+
+
+.social-card {
+  background-color: rgba(42, 42, 42, 0.8);
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+  margin-bottom: 30px;
+}
+
+.footer {
+  background-color: #181818;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.social-footer {
+  margin-bottom: 20px;
+}
+
+.social-footer .social-icon {
+  font-size: 2rem;
+  color: white;
+  margin: 0 15px;
+  transition: all 0.3s ease;
+}
+
+/* Hapus warna biru pada menu aktif */
+.nav-item.active .nav-link {
+  background-color: transparent; /* Menghilangkan latar belakang biru */
+  color: #fff; /* Pastikan teks tetap terlihat */
+}
+
+/* Styling untuk navbar item ketika dihover */
+.navbar-nav .nav-link:hover {
+  color: #ff7e5f; /* Warna saat hover */
+  background-color: transparent; /* Menghapus latar belakang hover */
+}
+/* Menghapus outline atau border saat navbar item di-klik */
+.navbar-nav .nav-link:focus, .navbar-nav .nav-link:active {
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+.social-media-btns a {
+  display: inline-block;
+  font-size: 1.8rem;
+  margin: 0 10px;
+  padding: 15px;
+  width: 60px;
+  height: 60px;
+  line-height: 30px;
+  border-radius: 50%;
+  color: #fff;
+  background: linear-gradient(135deg, #4e4e60, #6b6b80); /* gradien lembut */
+  transition: 0.3s ease-in-out;
+  text-align: center;
+  box-shadow: inset 0 0 10px rgba(255,255,255,0.05), 0 4px 10px rgba(0,0,0,0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.social-media-btns a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.05) 10%, transparent 11%), 
+                    radial-gradient(circle at 70% 70%, rgba(255,255,255,0.04) 10%, transparent 11%);
+  background-size: cover;
+  z-index: 0;
+}
+
+.social-media-btns a i {
+  position: relative;
+  z-index: 1;
+}
+
+.social-media-btns a:hover {
+  transform: translateY(-4px);
+  background: linear-gradient(135deg, #5e5e75, #7c7c94);
+}
+.btn-outline-light {
+  transition: all 0.3s ease;
+}
+#motivasiCarousel {
+  background: linear-gradient(135deg, #2e2e2e, #3a3a3a); /* Gradien gelap lembut */
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.carousel-item {
+  transition: transform 0.5s ease-in-out;
+}
+
+.blockquote {
+  background-color: rgba(255, 255, 255, 0.1); /* Efek transparansi */
+  border: 2px solid #444;
+  color: #f5f5f5;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.blockquote-footer {
+  color: #aaa;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: brightness(0.6);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  color: #ffffff;
+}
+body {
+  background: linear-gradient(to bottom right, #1f1f1f, #2c2c2c);
+  color: #ffffff;
+}
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  padding: 1rem;
+  animation: fadeInUp 1s ease-out;
+}
+@keyframes fadeInUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
