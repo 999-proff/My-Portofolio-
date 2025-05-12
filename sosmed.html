@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aldi - Sosmed Chill</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      background-color: #1f1f2e;
+      color: #e0e0e0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .navbar {
+      background-color: #2c2c3a;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+    }
+
+    .navbar-brand {
+      color: #c3cfe2 !important;
+      font-weight: bold;
+    }
+
+    .nav-link {
+      color: #ccc !important;
+      transition: 0.3s;
+    }
+
+    .nav-link:hover {
+      color: #c3cfe2 !important;
+    }
+
+    .nav-link.active {
+      color: #c3cfe2 !important;
+      font-weight: bold;
+      border-bottom: 2px solid #c3cfe2;
+    }
+
+    .dropdown-menu {
+      background-color: #2e2e3c;
+    }
+
+    .dropdown-item {
+      color: #eee;
+    }
+
+    .dropdown-item:hover {
+      background-color: #44445a;
+      color: #c3cfe2;
+    }
+
+    .section-header {
+      color: #c3cfe2;
+      margin-top: 2rem;
+    }
+
+    .social-media-btns a {
+      display: inline-block;
+      font-size: 2rem;
+      margin: 0 10px;
+      padding: 12px;
+      border-radius: 50%;
+      color: #e0e0e0;
+      background-color: #3b3b50;
+      transition: 0.3s ease-in-out;
+    }
+
+    .social-media-btns a:hover {
+      background-color: #5c5c78;
+      transform: translateY(-3px);
+    }
+
+    .social-card {
+      background-color: #2b2b3b;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .social-card h4 {
+      color: #c3cfe2;
+    }
+
+    .btn-outline-light {
+      color: #c3cfe2;
+      border-color: #c3cfe2;
+    }
+
+    .btn-outline-light:hover {
+      background-color: #c3cfe2;
+      color: #2b2b3b;
+    }
+
+    .spotify-header {
+      color: #c3cfe2;
+      margin-top: 3rem;
+    }
+
+    .soft-divider {
+      border-top: 1px solid #555;
+      margin: 20px 0;
+    }
+
+    .footer {
+      background-color: #2a2a3a;
+      color: #aaa;
+      padding: 20px 0;
+      margin-top: 3rem;
+      border-top: 1px solid #444;
+    }
+
+    .spotify-embed {
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(150, 150, 180, 0.2);
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">MyPorto</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about-me.html">About</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Other</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="contact-me.html">Contact</a></li>
+            <li><a class="dropdown-item" href="gallery.html">Gallery</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="sosmed.html">Sosmed</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" />
+        <button class="btn btn-outline-light" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<!-- Content -->
+<div class="container content text-center">
+  <h2 class="section-header">Find Me on Social Media</h2>
+
+<div class="row justify-content-center social-media-btns mb-5">
+  <div class="col-auto">
+    <a href="https://twitter.com/Aldi999Fr" target="_blank"
+       style="background: radial-gradient(circle at 30% 30%, #1da1f2 30%, #111 100%);
+              width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;
+              border-radius: 50%; box-shadow: inset 0 0 10px rgba(255,255,255,0.1), 0 4px 8px rgba(0,0,0,0.3);">
+      <i class="fab fa-twitter" style="color: white; font-size: 1.8rem;"></i>
+    </a>
+  </div>
+  <div class="col-auto">
+    <a href="https://github.com/999-proff" target="_blank"
+       style="background: radial-gradient(circle at 70% 70%, #333 30%, #1c1c1c 100%);
+              width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;
+              border-radius: 50%; box-shadow: inset 0 0 10px rgba(255,255,255,0.08), 0 4px 8px rgba(0,0,0,0.3);">
+      <i class="fab fa-github" style="color: white; font-size: 1.8rem;"></i>
+    </a>
+  </div>
+  <div class="col-auto">
+    <a href="https://www.facebook.com/share/1NQZqEM6va/" target="_blank"
+       style="background: radial-gradient(circle at 40% 40%, #1877f2 30%, #0f234f 100%);
+              width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;
+              border-radius: 50%; box-shadow: inset 0 0 10px rgba(255,255,255,0.05), 0 4px 8px rgba(0,0,0,0.3);">
+      <i class="fab fa-facebook-f" style="color: white; font-size: 1.8rem;"></i>
+    </a>
+  </div>
+</div>
+    <div class="col-auto">
+      <a href="https://github.com/999-proff" target="_blank">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="col-auto">
+      <a href="https://www.facebook.com/share/1NQZqEM6va/" target="_blank">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4">
+      <div class="social-card">
+        <h4>Connect with me on Twitter</h4>
+        <p>Follow me for updates, thoughts, and more!</p>
+        <a href="https://twitter.com/Aldi999Fr" class="btn btn-outline-light">Visit Twitter</a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="social-card">
+        <h4>Visit My GitHub</h4>
+        <p>Check out my projects, code, and more on GitHub!</p>
+        <a href="https://github.com/999-proff" class="btn btn-outline-light">Visit GitHub</a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="social-card">
+        <h4>Share on Facebook</h4>
+        <p>Share my profile or posts with your friends on Facebook!</p>
+        <a href="https://www.facebook.com/share/153NhhtkAU/" class="btn btn-outline-light">Share on Facebook</a>
+      </div>
+    </div>
+  </div>
+
+<!-- Spotify Embed -->
+<div class="container">
+  <h2 class="spotify-header">My Favorite Playlist</h2>
+  <hr class="soft-divider">
+  <iframe class="spotify-embed" src="https://open.spotify.com/embed/playlist/2zaEu5BZKaqrvMSUA9DjSI" allow="encrypted-media" style="width: 100%; max-width: 1000px; height: 400px;"></iframe>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+    <div class="container text-center">
+        <p>Follow me on social media</p>
+        <p>&copy; 2025 All rights reserved</p>
+    </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
